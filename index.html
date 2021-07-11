@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Weather anywhere</title>
+  </head>
+  <body>
+      <div class="content">
+    <nav class="top-banner">
+        <h1 class="heading" style="color: rgb(246, 246, 246);">
+            <img src="./icons/thermostat.png" alt="">
+            Weather</h1>
+        <form>
+            <input type="text" placeholder="Search for a city">
+            <button type="submit"><span>Submit</span></button>
+        </form>
+        <span class="menu-btn hide-item">
+            <div class="menu-button"></div>
+            <div class="menu-button"></div>
+            <div class="menu-button"></div>
+        </span>
+    </nav>
+
+    <section class="main">
+        <div class="card-background">
+            <div class="location">
+                <h1 class="location-timezone">Timezone</h1>
+                <span class="weather-icon">Icon</span>
+        </div>
+        <div class="temperature">
+            <div class="degree-section">
+                <h2 class="temperature-degree">temp</h2>
+                <span><sup>&#176C</sup></span>
+            </div>
+            <div class="temperature-description">Feels Like</div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <footer><span style="font-size: .3rem;">CREATED BY TUSHAR GOSWAMI</span></footer>
+  </body>
+  <script src="./script.js"></script>
+</html>

@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: calc(0.7vh + 1vw);
+}
+
+body {
+  background: linear-gradient(rgb(56, 182, 199), rgb(25, 32, 73));
+  /* font-family: sans-serif; */
+  font-family: "Encode Sans SC", sans-serif;
+  color: white;
+}
+
+.content {
+  height: 80vh;
+}
+
+section.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-background {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.123);
+  height: max-content;
+  width: 50%;
+  border-radius: 30px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  margin-top: 3rem;
+}
+
+.card-background::before {
+  filter: blur(10px);
+}
+
+.location,
+.temperature {
+  height: 30vh;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.temperature {
+  flex-direction: column;
+}
+
+.degree-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.degree-section span {
+  margin: 10px;
+  font-size: 30px;
+}
+
+.degree-section h2 {
+  font-size: 40px;
+}
+
+.top-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+h1.heading {
+  font-size: 2rem;
+  background: rgb(25, 32, 73);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: flex-end;
+}
+
+form{
+    display: flex;
+    align-items: flex-end;
+}
+
+form > input {
+  /* margin: 0.5rem; */
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom: solid rgba(37, 103, 112, 0.705);
+  width: 10rem;
+}
+
+.top-banner > form > button {
+  color: rgba(0, 0, 0, 0.657);
+  size: 1rem;
+  background-color: transparent;
+  border-color: transparent;/
+}
+
+.top-banner > form > button:hover {
+  color: rgba(0, 0, 0, 0.657);
+  size: 1rem;
+  background-color: black;
+  border-color: transparent;
+}
+
+.top-banner > form > button > span {
+  font-size: 0.7em;
+}
+
+div.menu-button {
+  height: 2px;
+  width: 20px;
+  border-top: solid white;
+  margin: 4px;
+}
+
+.hide-item {
+  display: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+@media only screen and (max-width: 650px) {
+
+    .card-background {
+    width: 70%;
+    height: 40vh;  
+    }
+
+}
