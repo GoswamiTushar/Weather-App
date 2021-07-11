@@ -87,9 +87,9 @@ h1.heading {
   align-items: flex-end;
 }
 
-form{
-    display: flex;
-    align-items: flex-end;
+form {
+  display: flex;
+  align-items: flex-end;
 }
 
 form > input {
@@ -104,14 +104,15 @@ form > input {
   color: rgba(0, 0, 0, 0.657);
   size: 1rem;
   background-color: transparent;
-  border-color: transparent;/
+  border-color: transparent;
 }
 
 .top-banner > form > button:hover {
-  color: rgba(0, 0, 0, 0.657);
+  /* color: white; */
   size: 1rem;
-  background-color: black;
+  background-color: rgba(37, 103, 112, 0.705);
   border-color: transparent;
+  border-radius: 5px;
 }
 
 .top-banner > form > button > span {
@@ -137,10 +138,8 @@ footer {
 }
 
 @media only screen and (max-width: 650px) {
-
-    .card-background {
+  .card-background {
     width: 70%;
-    height: 40vh;  
-    }
-
+    height: 40vh;
+  }
 }
